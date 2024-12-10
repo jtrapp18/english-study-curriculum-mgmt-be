@@ -3,10 +3,10 @@ const cors = require('cors');
 const routes = require('./routes/crud');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 // List of allowed origins (including ports)
-const allowedOrigins = ['http://localhost:8080', 'http://localhost:3000', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
+const allowedOrigins = ['http://localhost:8080', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
 
 // Configure CORS
 app.use(cors({
