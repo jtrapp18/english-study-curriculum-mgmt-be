@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "db.json",
   "dependencies": {
-    "json-server": "^0.17.0",
-    "cors": "^2.x.x"
+    "uuid": "^8.3.2",
+    "axios": "^1.7.2",
+    "cors": "^2.x.x",
+    "express": "^4.x.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
