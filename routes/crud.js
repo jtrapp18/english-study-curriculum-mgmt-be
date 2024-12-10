@@ -53,9 +53,11 @@ router.get('/:dbKey/:id', async (req, res) => {
     if (embedKey) {
       // Ensure embedKey exists in database
       if (db[embedKey]) {
+        const singularKey = dbKey.endsWith('s') ? dbKey.slice(0, -1) : dbKey;
+        const parentId = `${singularKey}Id`
         const embeddedData = {
           ...item,
-          [embedKey]: db[embedKey].filter(embedItem => embedItem.parentId === item.id) || [],
+          [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] === item.id) || [],
         };
         return res.status(200).json(embeddedData);
       } else {
@@ -98,9 +100,11 @@ router.get('/:dbKey', async (req, res) => {
 
     // Perform embedding if _embed query exists
     if (embedKey) {
+      const singularKey = dbKey.endsWith('s') ? dbKey.slice(0, -1) : dbKey;
+      const parentId = `${singularKey}Id`
       const embeddedData = data.map(item => ({
         ...item,
-        [embedKey]: db[embedKey].filter(embedItem => embedItem.parentId === item.id),
+        [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] === item.id),
       }));
       return res.status(200).json(embeddedData);
     }
