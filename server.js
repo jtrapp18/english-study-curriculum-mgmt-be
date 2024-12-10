@@ -13,18 +13,20 @@ const allowedOrigins = [
   'https://jtrapp18.github.io/english-study-curriculum-mgmt'
 ];
 
-server.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    },
-    credentials: true, // Allow cookies if necessary
-  })
-);
+// server.use(
+//   cors({
+//     origin: function (origin, callback) {
+//       if (!origin || allowedOrigins.includes(origin)) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error('Not allowed by CORS'));
+//       }
+//     },
+//     credentials: true, // Allow cookies if necessary
+//   })
+// );
+
+server.use(cors({ origin: '*' }));
 
 // Apply middlewares
 server.use(middlewares);
