@@ -156,10 +156,10 @@ router.post('/:dbKey', async (req, res) => {
 
 
 // Route to partially update data for a specific dbKey (PATCH)
-router.patch('/:dbKey', async (req, res) => {
-  const { dbKey } = req.params;
+router.patch('/:dbKey/:id', async (req, res) => {
+  const { dbKey, id } = req.params; // Extract both dbKey and id from the URL
   const updates = req.body;
-  
+
   try {
     const db = await readDb();
 
@@ -167,21 +167,22 @@ router.patch('/:dbKey', async (req, res) => {
       return res.status(404).json({ error: `No data found for key: ${dbKey}` });
     }
 
-    const item = db[dbKey].find(item => item.id === updates.id);
+    // Find the item by its id
+    const item = db[dbKey].find(item => item.id === parseInt(id)); // Ensure 'id' is correctly parsed
     if (!item) {
-      return res.status(404).json({ error: `Item not found for id: ${updates.id}` });
+      return res.status(404).json({ error: `Item not found for id: ${id}` });
     }
 
-    Object.assign(item, updates); // Apply updates to the item
+    // Apply the updates to the item
+    Object.assign(item, updates); 
     await writeDb(db);
 
-    res.status(200).json({ message: 'Data updated successfully', data: item });
+    res.status(200).json(item);
   } 
   catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
-
 
 // Route to delete data for a specific dbKey
 router.delete('/:dbKey', async (req, res) => {
