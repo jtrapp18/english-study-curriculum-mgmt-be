@@ -11,12 +11,14 @@ const dbPath = path.join(__dirname, '../db.json');
 const { promises: fsPromises } = require('fs');
 
 const readDb = async () => {
+  
   try {
     const data = await fsPromises.readFile(dbPath, 'utf8');
     return JSON.parse(data);
   } 
   catch (err) {
     console.error('Error reading db.json:', err);
+    console.log(data);
     throw new Error('Failed to read database');
   }
 };
