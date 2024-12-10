@@ -20,7 +20,7 @@ const allowedOrigins = ['http://localhost:8080', 'https://jtrapp18.github.io/eng
 // }));
 
 app.use(cors())
-app.use(express.json());
+// app.use(express.json());
 
 // Mount routes
 // app.use('/', routes);
