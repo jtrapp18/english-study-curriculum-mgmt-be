@@ -6,12 +6,12 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 // List of allowed origins (including ports)
-// const allowedOrigins = ['file://wsl.localhost', 'http://localhost:3000', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
+const allowedOrigins = ['http://localhost:8080', 'http://localhost:3000', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
 
-// // Configure CORS
-// app.use(cors({
-//   origin: allowedOrigins, // Only allow these origins
-// }));
+// Configure CORS
+app.use(cors({
+  origin: allowedOrigins, // Only allow these origins
+}));
 app.use(express.json());
 
 // Mount routes
