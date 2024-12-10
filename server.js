@@ -4,15 +4,29 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-// Use the environment variable PORT or default to 8080
 const port = process.env.PORT || 3000;
 
-const allowedOrigins = ['http://localhost:8080', 'http://localhost:3000', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
+// CORS configuration
+const allowedOrigins = [
+  'http://localhost:8080',
+  'http://localhost:3000',
+  'https://jtrapp18.github.io/english-study-curriculum-mgmt'
+];
 
-server.use(cors({
-  origin: allowedOrigins, // Only allow these origins
-}));
+server.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true, // Allow cookies if necessary
+  })
+);
 
+// Apply middlewares
 server.use(middlewares);
 server.use(router);
 
