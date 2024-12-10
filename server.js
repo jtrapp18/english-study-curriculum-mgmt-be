@@ -1,37 +1,28 @@
-const jsonServer = require('json-server');
+const express = require('express');
 const cors = require('cors');
-const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+const routes = require('./routes/crud');
 
+const app = express();
 const port = process.env.PORT || 3000;
 
-// CORS configuration
-const allowedOrigins = [
-  'http://localhost:8080',
-  'http://localhost:3000',
-  'https://jtrapp18.github.io/english-study-curriculum-mgmt'
-];
+// List of allowed origins (including ports)
+const allowedOrigins = ['http://localhost:8080', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
 
-// server.use(
-//   cors({
-//     origin: function (origin, callback) {
-//       if (!origin || allowedOrigins.includes(origin)) {
-//         callback(null, true);
-//       } else {
-//         callback(new Error('Not allowed by CORS'));
-//       }
-//     },
-//     credentials: true, // Allow cookies if necessary
-//   })
-// );
+// Configure CORS
+app.use(cors({
+  origin: allowedOrigins, // Only allow these origins
+}));
+app.use(express.json());
 
-server.use(cors({ origin: '*' }));
+// Mount routes
+app.use('/', routes);
 
-// Apply middlewares
-server.use(middlewares);
-server.use(router);
+// Catch-all error handler
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
 
-server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
