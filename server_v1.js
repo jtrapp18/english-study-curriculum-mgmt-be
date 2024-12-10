@@ -1,14 +1,8 @@
-// const express = require('express');
-// const routes = require('./routes/crud');
-// const app = express();
-
+const express = require('express');
 const cors = require('cors');
-const jsonServer = require('json-server');
-const app = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+const routes = require('./routes/crud');
 
-// Use the environment variable PORT or default to 8080
+const app = express();
 const port = process.env.PORT || 3000;
 
 // List of allowed origins (including ports)
@@ -23,16 +17,14 @@ app.use(cors())
 app.use(express.json());
 
 // Mount routes
-// app.use('/', routes);
-
-app.use(middlewares);
-app.use(router);
+app.use('/', routes);
 
 // Catch-all error handler
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
 
+// Start the server
 app.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
