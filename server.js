@@ -9,9 +9,11 @@ const port = process.env.PORT || 3000;
 const allowedOrigins = ['http://localhost:8080', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
 
 // Configure CORS
-app.use(cors({
-  origin: allowedOrigins, // Only allow these origins
-}));
+// app.use(cors({
+//   origin: allowedOrigins, // Only allow these origins
+// }));
+
+app.use(cors())
 app.use(express.json());
 
 // Mount routes
