@@ -60,7 +60,7 @@ router.get('/:dbKey/:id', async (req, res) => {
         const parentId = `${singularKey}Id`
         const embeddedData = {
           ...item,
-          [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] === item.id) || [],
+          [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] == item.id) || [],
         };
         return res.status(200).json(embeddedData);
       } else {
@@ -98,7 +98,7 @@ router.get('/:dbKey', async (req, res) => {
     // Perform search based on query string
     for (const [key, value] of Object.entries(searchParams)) {
       if (key !== '_embed') { // Exclude _embed key from being part of filtering
-        data = data.filter(item => item[key] === value);
+        data = data.filter(item => item[key] == value);
       }
     }
 
@@ -108,13 +108,13 @@ router.get('/:dbKey', async (req, res) => {
       const parentId = `${singularKey}Id`
       const embeddedData = data.map(item => ({
         ...item,
-        [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] === item.id),
+        [embedKey]: db[embedKey].filter(embedItem => embedItem[parentId] == item.id),
       }));
       return res.status(200).json(embeddedData);
     }
 
     if (searchKey && searchValue) {
-      const result = db[dbKey].filter(item => item[searchKey] === searchValue);
+      const result = db[dbKey].filter(item => item[searchKey] == searchValue);
       return res.status(200).json(result);
     }
 
@@ -168,7 +168,7 @@ router.patch('/:dbKey/:id', async (req, res) => {
     }
 
     // Find the item by its id
-    const item = db[dbKey].find(item => item.id === parseInt(id)); // Ensure 'id' is correctly parsed
+    const item = db[dbKey].find(item => item.id == id); // Ensure 'id' is correctly parsed
     if (!item) {
       return res.status(404).json({ error: `Item not found for id: ${id}` });
     }
