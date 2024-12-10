@@ -90,6 +90,7 @@ router.get('/:dbKey', async (req, res) => {
     }
 
     let data = db[dbKey];
+    console.log(data);
 
     // Perform search based on query string
     for (const [key, value] of Object.entries(searchParams)) {
