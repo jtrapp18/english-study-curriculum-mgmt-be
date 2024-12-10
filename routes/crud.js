@@ -157,7 +157,7 @@ router.post('/:dbKey', async (req, res) => {
 router.patch('/:dbKey', async (req, res) => {
   const { dbKey } = req.params;
   const updates = req.body;
-
+  
   try {
     const db = await readDb();
 
@@ -165,15 +165,21 @@ router.patch('/:dbKey', async (req, res) => {
       return res.status(404).json({ error: `No data found for key: ${dbKey}` });
     }
 
-    db[dbKey] = { ...db[dbKey], ...updates };
+    const item = db[dbKey].find(item => item.id === updates.id);
+    if (!item) {
+      return res.status(404).json({ error: `Item not found for id: ${updates.id}` });
+    }
+
+    Object.assign(item, updates); // Apply updates to the item
     await writeDb(db);
 
-    res.status(200).json({ message: 'Data updated successfully', data: db[dbKey] });
+    res.status(200).json({ message: 'Data updated successfully', data: item });
   } 
   catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
+
 
 // Route to delete data for a specific dbKey
 router.delete('/:dbKey', async (req, res) => {
