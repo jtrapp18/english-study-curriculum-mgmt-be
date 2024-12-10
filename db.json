@@ -1,0 +1,662 @@
+{
+  "grades": [
+    {
+      "points": "19",
+      "comments": "You did a great job analyzing the themes in the book. Your insights into the character development were very thoughtful.",
+      "studentId": "1",
+      "assignmentId": "Xtz5kDs",
+      "id": 12
+    },
+    {
+      "points": "14",
+      "comments": "Your summary of the plot was clear, but I would have liked to see more analysis of the main character's motivations.",
+      "studentId": "2",
+      "assignmentId": "7",
+      "id": 13
+    },
+    {
+      "points": "15",
+      "comments": "The report was well-organized and covered all key points, but be sure to focus more on the author's writing style next time.",
+      "studentId": "3",
+      "assignmentId": "Xtz5kDs",
+      "id": 14
+    },
+    {
+      "points": "18",
+      "comments": "I appreciate how you connected the book’s themes to real-world issues. It showed deep understanding.",
+      "studentId": "4",
+      "assignmentId": "Xtz5kDs",
+      "id": 15
+    },
+    {
+      "points": "15",
+      "comments": "Your conclusion was strong, but the body of your report could benefit from more detailed examples from the text.",
+      "studentId": "5",
+      "assignmentId": "Xtz5kDs",
+      "id": 16
+    },
+    {
+      "points": "16",
+      "comments": "You did well with your character analysis, but your report would be stronger with more specific quotes from the book.",
+      "studentId": "6",
+      "assignmentId": "Xtz5kDs",
+      "id": 17
+    },
+    {
+      "points": "18",
+      "comments": "Good job on summarizing the plot! Try to provide more of your personal opinion and reflection in future reports.",
+      "studentId": "7",
+      "assignmentId": "Xtz5kDs",
+      "id": 18
+    },
+    {
+      "points": "17",
+      "comments": "The report was concise and informative. It would have been even better with a bit more depth in your critique of the author’s choices.",
+      "studentId": "8",
+      "assignmentId": "Xtz5kDs",
+      "id": 19
+    },
+    {
+      "points": "14",
+      "comments": "You provided a clear overview of the book, but I would have liked to see more connection between the story and the themes you discussed.",
+      "studentId": "9",
+      "assignmentId": "Xtz5kDs",
+      "id": 20
+    },
+    {
+      "points": "16",
+      "comments": "Your writing was clear and easy to follow. In future reports, try to dive deeper into the symbolic meanings in the story.",
+      "studentId": "10",
+      "assignmentId": "Xtz5kDs",
+      "id": 21
+    },
+    {
+      "points": "12",
+      "comments": "Your report is very brief and lacks detail. Please provide more examples from the book to support your ideas next time.",
+      "studentId": "11",
+      "assignmentId": "Xtz5kDs",
+      "id": 22
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "1",
+      "assignmentId": "jTOxjZ1",
+      "id": 23
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "2",
+      "assignmentId": "jTOxjZ1",
+      "id": 24
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "3",
+      "assignmentId": "jTOxjZ1",
+      "id": 25
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "4",
+      "assignmentId": "jTOxjZ1",
+      "id": 26
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "5",
+      "assignmentId": "jTOxjZ1",
+      "id": 27
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "6",
+      "assignmentId": "jTOxjZ1",
+      "id": 28
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "8",
+      "assignmentId": "jTOxjZ1",
+      "id": 29
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "7",
+      "assignmentId": "jTOxjZ1",
+      "id": 30
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "9",
+      "assignmentId": "jTOxjZ1",
+      "id": 31
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "11",
+      "assignmentId": "jTOxjZ1",
+      "id": 32
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "10",
+      "assignmentId": "jTOxjZ1",
+      "id": 33
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "1",
+      "assignmentId": "tmkFOQ2",
+      "id": 34
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "2",
+      "assignmentId": "tmkFOQ2",
+      "id": 35
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "3",
+      "assignmentId": "tmkFOQ2",
+      "id": 36
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "4",
+      "assignmentId": "tmkFOQ2",
+      "id": 37
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "5",
+      "assignmentId": "tmkFOQ2",
+      "id": 38
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "6",
+      "assignmentId": "tmkFOQ2",
+      "id": 39
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "7",
+      "assignmentId": "tmkFOQ2",
+      "id": 40
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "8",
+      "assignmentId": "tmkFOQ2",
+      "id": 41
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "9",
+      "assignmentId": "tmkFOQ2",
+      "id": 42
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "10",
+      "assignmentId": "tmkFOQ2",
+      "id": 43
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "11",
+      "assignmentId": "tmkFOQ2",
+      "id": 44
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "1",
+      "assignmentId": "htuk8JN",
+      "id": 45
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "2",
+      "assignmentId": "htuk8JN",
+      "id": 46
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "3",
+      "assignmentId": "htuk8JN",
+      "id": 47
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "4",
+      "assignmentId": "htuk8JN",
+      "id": 48
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "5",
+      "assignmentId": "htuk8JN",
+      "id": 49
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "6",
+      "assignmentId": "htuk8JN",
+      "id": 50
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "7",
+      "assignmentId": "htuk8JN",
+      "id": 51
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "8",
+      "assignmentId": "htuk8JN",
+      "id": 52
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "9",
+      "assignmentId": "htuk8JN",
+      "id": 53
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "10",
+      "assignmentId": "htuk8JN",
+      "id": 54
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "11",
+      "assignmentId": "htuk8JN",
+      "id": 55
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "1",
+      "assignmentId": "-jDHMUa",
+      "id": 56
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "2",
+      "assignmentId": "-jDHMUa",
+      "id": 57
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "4",
+      "assignmentId": "-jDHMUa",
+      "id": 58
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "3",
+      "assignmentId": "-jDHMUa",
+      "id": 59
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "5",
+      "assignmentId": "-jDHMUa",
+      "id": 60
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "6",
+      "assignmentId": "-jDHMUa",
+      "id": 61
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "7",
+      "assignmentId": "-jDHMUa",
+      "id": 62
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "8",
+      "assignmentId": "-jDHMUa",
+      "id": 63
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "11",
+      "assignmentId": "-jDHMUa",
+      "id": 64
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "10",
+      "assignmentId": "-jDHMUa",
+      "id": 65
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "1",
+      "assignmentId": "YVHWeYA",
+      "id": 69
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "2",
+      "assignmentId": "YVHWeYA",
+      "id": 70
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "3",
+      "assignmentId": "YVHWeYA",
+      "id": 71
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "4",
+      "assignmentId": "YVHWeYA",
+      "id": 72
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "5",
+      "assignmentId": "YVHWeYA",
+      "id": 73
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "6",
+      "assignmentId": "YVHWeYA",
+      "id": 74
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "7",
+      "assignmentId": "YVHWeYA",
+      "id": 75
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "8",
+      "assignmentId": "YVHWeYA",
+      "id": 76
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "9",
+      "assignmentId": "YVHWeYA",
+      "id": 77
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "10",
+      "assignmentId": "YVHWeYA",
+      "id": 78
+    },
+    {
+      "points": 0,
+      "comments": "",
+      "studentId": "11",
+      "assignmentId": "YVHWeYA",
+      "id": 79
+    }
+  ],
+  "assignments": [
+    {
+      "name": "Final Report - The Great Gatsby",
+      "description": "The purpose of this book report is to help you summarize the key elements of the story, understand the author’s message, and reflect on your personal response to the book. You’ll be describing the plot, main characters, setting, and themes in a way that shows you’ve read and thought about the story in detail.",
+      "startDate": "2024-12-09",
+      "dueDate": "2024-12-19",
+      "maxPoints": "20",
+      "bookId": "a133",
+      "id": "Xtz5kDs"
+    },
+    {
+      "name": "Character Analysis - To Kill a Mockingbird",
+      "description": "In this assignment, you will select a character from the book we are reading and analyze their personality, motivations, development, and relationships with other characters. Your goal is to understand this character deeply and to express how they contribute to the story’s themes and conflict.",
+      "startDate": "2025-01-06",
+      "dueDate": "2025-01-14",
+      "maxPoints": "10",
+      "bookId": "1bd5",
+      "id": "jTOxjZ1"
+    },
+    {
+      "name": "Theme Reflection - Of Mice and Men",
+      "description": "Choose one theme from Of Mice and Men—such as friendship, loneliness, the American Dream, or power—and analyze how it shapes the experiences of one or more characters, like George, Lennie, or Curley’s wife. In one paragraph, explain how this theme affects the character's actions, relationships, and outlook on life, using specific examples from the text to support your analysis. End with a reflection on what Steinbeck might be saying about this theme and its impact on people’s lives.",
+      "startDate": "2025-02-03",
+      "dueDate": "2025-02-07",
+      "maxPoints": "15",
+      "bookId": "0a1f",
+      "id": "tmkFOQ2"
+    },
+    {
+      "name": "Final Report - To Kill a Mockingbird",
+      "description": "The purpose of this book report is to help you summarize the key elements of the story, understand the author’s message, and reflect on your personal response to the book. You’ll be describing the plot, main characters, setting, and themes in a way that shows you’ve read and thought about the story in detail.",
+      "startDate": "2025-01-13",
+      "dueDate": "2025-01-23",
+      "maxPoints": "20",
+      "bookId": "1bd5",
+      "id": "htuk8JN"
+    },
+    {
+      "name": "The Descent into Savagery in Lord of the Flies",
+      "description": "In Lord of the Flies, William Golding explores the darker side of human nature through the boys' descent into savagery. In one paragraph, analyze how the loss of societal norms and the emergence of primal instincts affect the behavior of the boys, particularly focusing on the relationship between Ralph and Jack. Use examples from the text to support your points, and conclude by reflecting on what Golding seems to be saying about human nature and civilization.",
+      "startDate": "2025-03-31",
+      "dueDate": "2025-04-04",
+      "maxPoints": "10",
+      "bookId": "69de",
+      "id": "-jDHMUa"
+    },
+    {
+      "name": "The Ghost and Its Influence on Hamlet",
+      "description": "In Hamlet, the appearance of the ghost of King Hamlet sets the stage for the entire play, particularly regarding Hamlet’s quest for revenge. In one paragraph, analyze the significance of the ghost’s appearance and how it influences Hamlet’s actions throughout the play. Use specific examples from the text to support your points, and conclude by discussing the ghost’s role in the development of the themes of revenge and justice in the play.",
+      "startDate": "2025-05-05",
+      "dueDate": "2025-05-23",
+      "maxPoints": "25",
+      "bookId": "69de",
+      "id": "YVHWeYA"
+    }
+  ],
+  "books": [
+    {
+      "id": "a133",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://archive.org/download/greatgatsby0000fitz_u2h3/page/cover.jpg",
+      "description": "Married people, fiction",
+      "notes": "",
+      "apiId": "10590366"
+    },
+    {
+      "id": "1bd5",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://archive.org/download/tokillmockingbir00leehrich/page/cover_w500_h500.jpg",
+      "description": "fiction",
+      "notes": "",
+      "apiId": "10590366"
+    },
+    {
+      "id": "3309",
+      "title": "Romeo and Juliet",
+      "author": "William Shakespeare",
+      "image": "https://m.media-amazon.com/images/I/516E1EfYEfL._SL500_.jpg",
+      "description": "Bibliography",
+      "notes": "",
+      "apiId": "8257991"
+    },
+    {
+      "id": "0a1f",
+      "title": "Of Mice and Men",
+      "author": "John Steinbeck",
+      "image": "https://archive.org/download/ofmicemen0000john_s4l0/page/cover_w500_h500.jpg",
+      "description": "contemporary fiction",
+      "notes": "",
+      "apiId": "14319003"
+    },
+    {
+      "id": "d963",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "image": "https://archive.org/download/animalfarm00orwe_0/page/cover_w500_h500.jpg",
+      "description": "British and irish fiction (fictional works by one author)",
+      "notes": "",
+      "apiId": "11261770"
+    },
+    {
+      "id": "69de",
+      "title": "Lord of Flies",
+      "author": "William Golding",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41OtRk9o81L.jpg",
+      "description": "fiction",
+      "notes": "",
+      "apiId": "8684447"
+    },
+    {
+      "id": "7142",
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "image": "https://archive.org/download/tragicallhistori00shak/page/cover_w500_h500.jpg",
+      "description": "performing arts",
+      "notes": "",
+      "apiId": "8281954"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J. K. Rowling",
+      "image": "img/unavailable.jpg",
+      "description": "Fantasy fiction",
+      "notes": "",
+      "apiId": "10580435",
+      "id": "-8Au4Gq"
+    },
+    {
+      "title": "The Mystery of the Blue Train",
+      "author": "Agatha Christie",
+      "image": "https://archive.org/download/bwb_KR-538-919/page/cover_w500_h500.jpg",
+      "description": "Crimes against",
+      "notes": "",
+      "apiId": "14575533",
+      "id": "PYrGHyR"
+    },
+    {
+      "title": "The Mysterious Affair at Styles",
+      "author": "Agatha Christie",
+      "image": "https://archive.org/download/mysteriousaffair00chri/page/cover_w500_h500.jpg",
+      "description": "Fiction",
+      "notes": "",
+      "apiId": "13699667",
+      "id": "NurJwTF"
+    },
+    {
+      "title": "Death in the Clouds",
+      "author": "Agatha Christie",
+      "image": "https://archive.org/download/deathinclouds0000unse/page/cover_w500_h500.jpg",
+      "description": "Detective and mystery stories",
+      "notes": "",
+      "apiId": "11433305",
+      "id": "fcHwtoz"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "fullName": "Liam Adams"
+    },
+    {
+      "id": "2",
+      "fullName": "Noah Baker"
+    },
+    {
+      "id": "3",
+      "fullName": "Olivia Clark"
+    },
+    {
+      "id": "4",
+      "fullName": "Catherine Davis"
+    },
+    {
+      "id": "5",
+      "fullName": "Elijah Evans"
+    },
+    {
+      "id": "6",
+      "fullName": "Rebecca Frank"
+    },
+    {
+      "id": "7",
+      "fullName": "Theodore Ghosh"
+    },
+    {
+      "id": "8",
+      "fullName": "Lucas Hills"
+    },
+    {
+      "id": "9",
+      "fullName": "Mary Irwin"
+    },
+    {
+      "id": "10",
+      "fullName": "William Jones"
+    },
+    {
+      "id": "11",
+      "fullName": "Thomas Lopez"
+    }
+  ]
+}
