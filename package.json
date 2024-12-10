@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "db.json",
   "dependencies": {
-    "uuid": "^8.3.2",
     "axios": "^1.7.2",
     "cors": "^2.x.x",
     "express": "^4.x.x"
