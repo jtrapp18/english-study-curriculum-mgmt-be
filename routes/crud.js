@@ -130,15 +130,24 @@ router.post('/:dbKey', async (req, res) => {
 
   try {
     const db = await readDb();
-    db[dbKey] = newData;
+    
+    // Ensure the dbKey exists as an array in your database
+    if (!Array.isArray(db[dbKey])) {
+      db[dbKey] = []; // Initialize as an empty array if not already present
+    }
+
+    // Push the new object into the array
+    db[dbKey].push(newData);
+
     await writeDb(db);
 
-    res.status(200).json({ message: 'Data updated successfully', data: db[dbKey] });
+    res.status(200).json({ message: 'Data added successfully', data: newData });
   } 
   catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
+
 
 // Route to partially update data for a specific dbKey (PATCH)
 router.patch('/:dbKey', async (req, res) => {
