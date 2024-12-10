@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require('uuid');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -126,7 +127,10 @@ router.get('/:dbKey', async (req, res) => {
 // Route to update data for a specific dbKey (Full replacement)
 router.post('/:dbKey', async (req, res) => {
   const { dbKey } = req.params;
-  const newData = req.body;
+  const newData = {
+    ...req.body,
+    id: uuidv4()
+    };
 
   try {
     const db = await readDb();
