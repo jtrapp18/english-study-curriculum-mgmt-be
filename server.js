@@ -1,7 +1,3 @@
-// const express = require('express');
-// const routes = require('./routes/crud');
-// const app = express();
-
 const cors = require('cors');
 const jsonServer = require('json-server');
 const app = jsonServer.create();
@@ -12,17 +8,31 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 8080;
 
 // List of allowed origins (including ports)
-const allowedOrigins = ['http://localhost:3000', 'https://jtrapp18.github.io/english-study-curriculum-mgmt'];
+const allowedOrigins = [
+  'http://localhost:3000', 
+  'https://jtrapp18.github.io/english-study-curriculum-mgmt'
+];
 
 // Configure CORS
-app.use(cors({
-  origin: allowedOrigins,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true 
-}));
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true, // Include cookies or credentials if needed
+};
 
-// app.use(express.json());
+app.use(cors(corsOptions));
 
+// Handle preflight requests for all routes
+app.options('*', cors(corsOptions));
+
+// Use default json-server middlewares
 app.use(middlewares);
 app.use(router);
 
